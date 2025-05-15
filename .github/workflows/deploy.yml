@@ -34,9 +34,9 @@ jobs:
         run: |
           # Define SSH connection info
           SSH_USER="jetty"
-          DO_DROPLET_IP="138.68.83.54"
+          DO_DROPLET_IP="138.68.80.203"
           APP_NAME="timer"
-          REMOTE_PATH="/home/jetty/deployment/site/$APP_NAME/"
+          REMOTE_PATH="/home/jetty/deployment/site/timer"
 
           # Sync build output to the Droplet using rsync
           rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./dist/ $SSH_USER@$DO_DROPLET_IP:$REMOTE_PATH
