@@ -1,0 +1,22 @@
+.button {
+  padding: 0.5rem 1rem;
+  border: 2px solid currentColor;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.lightPreview {
+  background-color: #b78c77;
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.darkPreview {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border-color: #b78c77;
+}

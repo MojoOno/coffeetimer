@@ -1,0 +1,115 @@
+/* General Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Center horizontally */
+  justify-content: flex-start; /* Align to top */
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.coffeecup {
+  margin: 1rem 0;
+}
+
+.remaining-time {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Timer Controls */
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.play-buttons {
+  display: flex;
+  gap: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.input-boxes {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-input label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  width: 4rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  margin-top: 0rem;
+  flex-wrap: nowrap;
+}
+
+.btn {
+  background-color: var(--primary-color, #6c63ff);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin: 0.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+  flex: 1; /* Allow buttons to grow and fill space */
+}
+
+.btn:hover {
+  background-color: var(--secondary-color, #ff6584);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .remaining-time {
+    font-size: 1.5rem;
+  }
+
+  .input-boxes {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  input {
+    width: 100%;
+  }
+}
